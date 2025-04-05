@@ -8,4 +8,10 @@ Meet L.I.S.A - an intelligent robot controlled by an Arduino Uno that:
 - Has audio and visual cues to show what its doing
 - Has lots of attitude
 
-This repository houses all the source code, and other Arduino sketches used in the design and implementation of L.I.S.A.
+This repository houses all:
+- All of L.I.S.A's brains (Arduino sketches used to control L.I.S.A's systems)
+- Testing code and all the individual systems used in designing the final source code
+- Sketches, CAD files and diagrams of the body and chasis
+- Schematics of all sorts (Circuits, systems, etc)
+- Your personal - How to make your own L.I.S.A instruction handbook.
+- L.I.S.A care guide
