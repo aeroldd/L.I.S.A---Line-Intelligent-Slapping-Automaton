@@ -1,0 +1,1 @@
+The sketches in this folder were used in the design and implementation of line following in L.I.S.A
