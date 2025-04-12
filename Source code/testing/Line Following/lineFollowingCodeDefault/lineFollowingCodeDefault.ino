@@ -37,7 +37,7 @@ int irSensorDigital[3] = {0, 0, 0};
 int threshold = 600; // IR sensor threshold value for line detection
 
 
-const int maxSpeed = 180; // the range for speed is(0,255)
+const int maxSpeed = 200; // the range for speed is(0,255)
 
 // binary representation of the sensor reading
 // 1 when the sensor detects the line, 0 otherwise
@@ -142,7 +142,6 @@ void Scan() {
     int b = 2-i;
     irSensors = irSensors + (irSensorDigital[i]<<b);
     }
-    //Serial.println();
 }
 
 void UpdateDirection() {

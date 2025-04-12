@@ -365,11 +365,7 @@ void scanIR() {
 
 // Ultrasonic sensor scanning - updates the distance global variable
 void scanUltrasonic() {
-  // Ultrasonic sernsor scanning
   distance = sonar.ping_cm();
-  // Serial.print("distance:");
-  // Serial.print(distance);
-  // Serial.print(" ");
 }
 
 // PID Constants (Tune these values)
@@ -567,20 +563,17 @@ void ledFlip(int pin) {
 }
 
 void loop() {
-  // // get data from the IR and ultrasonic sensors
+  // get data from the IR and ultrasonic sensors
   scanIR();
   scanUltrasonic();
 
-  // // update the direction of the buggy depending on the sensor's data
+  // update the direction of the buggy depending on the sensor's data
   UpdateDirection();
 
-  // // update the buggy's state based on the sensor's data
+  // update the buggy's state based on the sensor's data
   updateState();
 
-  // //Serial.println(distance);
-
-
-  // // do different functions based on the buggy's state machine
+  // do different functions based on the buggy's state machine
   switch (state) {
     case MOVING: {
       lineFollowing();
@@ -604,9 +597,8 @@ void loop() {
       break;
     }
   }
-
   Serial.println(distance);
-
-
   dfmp3.loop();
+}
+
 }
